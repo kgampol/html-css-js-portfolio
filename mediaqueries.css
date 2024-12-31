@@ -1,0 +1,147 @@
+@media screen and (max-width: 1400px) {
+   #profile{
+    height: 83vh;
+    margin-bottom: 6rem;
+   }
+   .about-containers{
+    flex-wrap: wrap;
+   }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    #experience,.experience-details-container{
+        margin-top: 2rem;
+    }
+    #profile, .section-container{
+        display:block;        
+    }
+    .arrow{
+        display: none;
+    }
+    section, .section-container{
+        height: fit-content;
+    }
+    section{
+        margin: 0 5%;
+    }
+    .section__pic-container{
+        width: 275px;
+        height: 275px;
+        margin: 0 auto 2rem;
+
+    }
+    .about-containers{
+        margin-top: 0;
+
+    }
+}
+@media screen and (max-width: 600px) {
+   #contact, footer{
+    height: 40vh;
+   }
+   #profile{
+    height: 83vh;
+    margin-bottom: 0;
+   }
+   article{
+    font-size: 1rem;
+   }
+   footer nav{
+    height: fit-content;
+    margin-bottom: 2rem;
+   }
+   .about-containers, .contact-info-upper-container, .btn-container, .article-container{
+    flex-wrap: wrap;
+
+   }
+   .contact-info-container{
+    margin: 0;
+   }
+   .contact-info-container p, .na-links li a {
+    font-size: 1rem;
+   }
+   .experience-subtitle{
+    font-size: 1.25rem;
+    
+   }
+   .logo{
+    font-size: 1.5rem;
+   }
+   .nav-links{
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+   }
+   .section__pic-container{
+    width: auto;
+    height: 70vw;
+    justify-content: center;
+   }
+   .about-pic{
+    width: auto;
+    height: 70vw;
+    justify-content: center;
+
+   }
+   .title{
+    font-size: 2rem;
+   }
+   .text-container{
+    text-align: justify;
+   }
+   .section__text__p2 {
+    font-size: 1.25rem;
+    
+ }
+ @media (max-width: 768px) {
+    .article-container {
+        flex-direction: column; /* Stack items vertically */
+        gap: 1.5rem; /* Reduce the gap for smaller screens */
+        padding: 0.5rem; /* Reduce padding */
+        width: 95%; /* Slightly smaller width for better centering */
+        margin: 0 auto 0 2%; /* Add left margin to shift it slightly left */
+    }
+}
+
+/* For medium screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .article-container {
+        flex-direction: row; /* Keep items in a row */
+        justify-content: center; /* Center items for medium screens */
+        gap: 2rem; /* Adjust spacing between items */
+        padding: 1rem; /* Restore padding for larger screens */
+        margin: 0 auto; /* Center horizontally */
+    }
+}
+@media (max-width: 768px) {
+    #experience {
+        padding: 1.5rem 0.5rem; /* Reduce padding on mobile */
+    }
+
+    .section__text__p1 {
+        font-size: 0.9rem; /* Slightly smaller text size for smaller screens */
+    }
+
+    .title {
+        font-size: 1.5rem; /* Reduce the title size for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .section__pic-container {
+        height: 50vw; /* Set height as a percentage of viewport width */
+        width: 50vw; /* Keep width equal to height */
+    }
+}
+
+.section__pic-container img {
+    width: 100%; /* Ensure the image fills the container */
+    height: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+}
